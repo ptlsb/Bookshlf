@@ -1,0 +1,86 @@
+.categories {
+  padding-top: 10px;
+  background-color: white;
+  color: rgb(51, 51, 51);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 230px;
+  width: 100%;
+  max-width: 350px;
+  cursor: pointer;
+  background-color: rgb(10, 37, 64);
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 0.5px solid rgba(255, 255, 255, 0);
+  color: rgb(255, 151, 65);
+}
+.item:hover {
+  background-color: rgb(255, 151, 65);
+  transition: 0.3s;
+  color: rgb(51, 51, 51);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+.item-h6 {
+  font-size: 1em;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .categories h4 {
+    font-size: 24px;
+    font-weight: bolder !important;
+  }
+  .categories h6 {
+    font-size: 12px !important;
+    font-weight: bolder !important;
+  }
+  .categories .MuiAvatar-root {
+    height: 50px;
+    width: 50px;
+  }
+  .categories .MuiTypography-caption {
+    font-size: 9px;
+    padding: 6px 0px;
+    width: 50px;
+  }
+  .item {
+    height: 125px;
+    width: 125px;
+  }
+  .item-h6 {
+    font-size: 12px !important;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .categories h6 {
+    font-size: 9px !important;
+  }
+  .categories .MuiAvatar-root {
+    height: 35px;
+    width: 35px;
+    top: 5px;
+  }
+  .categories .MuiTypography-caption {
+    font-size: 9px;
+    padding: 6px 0px;
+    width: 50px;
+  }
+  .item {
+    height: 125px;
+    width: 125px;
+  }
+  .item-h6 {
+    font-size: 12px !important;
+    margin-top: 40px;
+  }
+}
